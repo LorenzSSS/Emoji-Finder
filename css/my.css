@@ -1,0 +1,54 @@
+.onecontainer {
+    background: linear-gradient(92deg,rgba(8, 121, 144, 1.00), rgba(5, 81, 96, 1.00));
+    margin: 0 auto;
+    width: 1440px;
+    height: 295px;
+}
+
+.placeholder {
+    border-radius: 100px red;
+    width: 820px
+
+}
+
+.container {
+    width: 986px;
+    margin: 0 auto;
+    display: grid;
+    gap: 22px;
+    grid-template-rows: repeat(2, 184px);
+    grid-template-columns: repeat(3, 316px);
+    background-color: brown;
+}
+
+h1 {
+    text-align: center;
+    font-size: 200px;
+    padding-top: 68px;
+}
+
+/* .grid__container {
+    margin-top: 79px;
+} */
+
+.card {
+    width: 316px;
+    height: 184px;
+    background: gray;
+}
+
+img {
+    display: inline;
+    padding: 24px 134px 18px 134px;
+}
+
+.number {
+    display: inline;
+    padding-left: 142px;
+    font-size: 17px;
+}
+
+.text {
+    text-align: center;
+    padding-top: 12px;
+}
