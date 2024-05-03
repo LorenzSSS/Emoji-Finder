@@ -14,11 +14,7 @@
 .container {
     width: 986px;
     margin: 0 auto;
-    display: grid;
-    gap: 22px;
-    grid-template-rows: repeat(2, 184px);
-    grid-template-columns: repeat(3, 316px);
-    background-color: brown;
+   background-color: brown;
 }
 
 h1 {
@@ -27,9 +23,13 @@ h1 {
     padding-top: 68px;
 }
 
-/* .grid__container {
+.grid__container {
     margin-top: 79px;
-} */
+    display: grid;
+    gap: 22px;
+    grid-template-rows: repeat(2, 184px);
+    grid-template-columns: repeat(3, 316px);
+}
 
 .card {
     width: 316px;
