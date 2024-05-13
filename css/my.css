@@ -17,7 +17,11 @@ body {
     position: relative;
 }
 
-
+.container{
+    margin: 0 auto;
+    max-width: 986px;
+    height: 100%;
+}
 
 .onecontainer {
     background: linear-gradient(92deg,rgba(8, 121, 144, 1.00), rgba(5, 81, 96, 1.00));
@@ -65,15 +69,16 @@ body {
     display: grid;
     row-gap: 22px;
     column-gap: 19px;
-    grid-template-rows: repeat(2, 184px);
-    grid-template-columns: repeat(3, 316px);
-    width: 986px;
+    grid-template-columns: repeat(auto-fill, minmax(316px, 1fr));
+    min-width: 986px;
+    width: 100%;
 }
 
 .card {
     background: #FFF;
-    width: 316px;
-    height: 184px;
+    min-height: 184px;
+    height: 100%;
+    width: 100%;
     padding: 24px;
     border-radius: 4px;
     font-family: Inter, sans-serif;
