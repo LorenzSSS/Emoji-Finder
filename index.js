@@ -4,8 +4,9 @@ import {data} from './data.js'
 
 console.log(data);
 
+const placeholder = document.querySelector('.placeholder');
+
 function createCard(obj) {
-    const placeholder = document.querySelector('.placeholder');
     const card = document.createElement('div');
     card.className = 'card';
     const emodsy = document.createElement('span');
@@ -35,5 +36,12 @@ function delDuplicate (keyWords) {
 };
 
 renderCards(data);
+
+placeholder.addEventListener('input', function() { 
+    container.innerHTML = '';
+    renderCards(data.filter(el => el.title.toLowerCase().includes(placeholder.value.toLowerCase()) || el.keywords.toLowerCase().includes(placeholder.value.toLowerCase())))
+});
+
+
 
 

@@ -110,3 +110,9 @@ img {
     padding-top: 12px;
     font-weight: 400;
 }
+
+@media screen and (max-width: 417px) {
+    .emoji__text {
+        padding-top: 30px;
+    }
+}
